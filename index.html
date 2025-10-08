@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>自己紹介ページ</title>
   <style>
+    /* ====== 基本設定 ====== */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
       margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      background: linear-gradient(180deg, #f2f8ff, #ffffff);
       color: #333;
+      line-height: 1.7;
     }
+
+    /* ====== ヘッダー ====== */
     header {
-      background: #4CAF50;
+      background: #4e8ef7;
       color: white;
-      padding: 20px 0;
       text-align: center;
+      padding: 40px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
-    section {
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* ====== コンテンツ ====== */
+    main {
       max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 40px auto;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     h2 {
-      color: #4CAF50;
+      color: #4e8ef7;
+      border-left: 6px solid #4e8ef7;
+      padding-left: 10px;
     }
+
+    section {
+      margin-bottom: 30px;
+    }
+
     img {
       width: 150px;
       border-radius: 50%;
+      display: block;
+      margin: 10px auto 20px;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #f2f8ff;
+      margin: 6px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    /* ====== フッター ====== */
     footer {
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 20px;
       font-size: 0.9em;
-      color: #555;
+      color: #777;
+    }
+
+    /* ====== リンク装飾 ====== */
+    a {
+      color: #4e8ef7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== スマホ対応 ====== */
+    @media (max-width: 600px) {
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -48,38 +97,37 @@
     <h1>私の自己紹介ページ</h1>
   </header>
 
-  <section>
-    <h2>プロフィール</h2>
-    <img src="https://placehold.jp/150x150.png" alt="プロフィール画像">
-    <p>こんにちは！〇〇と申します。<br>
-    現在、Web開発を勉強中で、フロントエンド開発を中心に学んでいます。</p>
-  </section>
+  <main>
+    <section>
+      <h2>プロフィール</h2>
+      <img src="https://placehold.jp/150x150.png" alt="プロフィール画像">
+      <p>こんにちは！〇〇と申します。<br>
+      現在、Web開発を勉強中で、フロントエンド開発を中心に学んでいます。</p>
+    </section>
 
-  <section>
-    <h2>スキル</h2>
-    <ul>
-      <li>HTML / CSS</li>
-      <li>JavaScript（勉強中）</li>
-      <li>事務効率化・自動化（GASなど）</li>
-    </ul>
-  </section>
+    <section>
+      <h2>スキル</h2>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript（勉強中）</li>
+        <li>事務効率化・自動化（GASなど）</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>趣味</h2>
-    <p>読書・旅行・コーヒー巡りが好きです。</p>
-  </section>
+    <section>
+      <h2>趣味</h2>
+      <p>読書・旅行・カフェ巡りが好きです。</p>
+    </section>
 
-  <section>
-    <h2>お問い合わせ</h2>
-    <p>メール: example@example.com</p>
-  </section>
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>メール: example@example.com</p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 Masami
   </footer>
 </body>
 </html>
-
-
-
 
